@@ -1,0 +1,26 @@
+{
+    "name": "screener",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "description": "A simple recorder for chrome",
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "downloads"
+        
+    ],
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "action": {
+        "default_title": "Screener",
+        "default_popup": "popup.html"
+      }
+}
