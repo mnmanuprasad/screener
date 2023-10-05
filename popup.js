@@ -10,6 +10,10 @@ import { getActiveTab } from "./utils.js";
             chrome.tabs.sendMessage(tab.id, {type: 'START'}, downloadVideo) 
         })
         
+        startRecordBtn.addEventListener('click', async()=>{
+            let tab = await getActiveTab();
+            chrome.tabs.sendMessage(tab.id, {type: 'STOP'}, downloadVideo)
+        })
 })();
 
 function downloadVideo(url){
@@ -20,10 +24,7 @@ function downloadVideo(url){
         });
     }
     else(
-        chrome.downloads.download({
-            saveAs: true,
-            url: "https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        })
+        console.log(url)
     );
   
 }
