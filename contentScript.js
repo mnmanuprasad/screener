@@ -15,6 +15,13 @@
         
     })
 
+    // document.addEventListener('keydown',async (event)=>{
+    //     if(event.altKey && event.key === 's'){
+    //         console.log("Stopping the recording")
+    //         stopRecording();
+    //     }
+    // })
+
     async function stopRecording(){
         mediaRecorder.stop();
     }

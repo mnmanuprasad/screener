@@ -22,5 +22,15 @@
     "action": {
         "default_title": "Screener",
         "default_popup": "popup.html"
+      },
+    
+      "commands":{
+        "stop-recording":{
+            "suggested_key": {
+                "default": "Alt+S",
+                "mac": "Command+S"
+              },
+            "description": "Stop Recording"
+        }
       }
 }
