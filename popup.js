@@ -16,18 +16,7 @@ import { getActiveTab } from "./utils.js";
             let tab = await getActiveTab();
             chrome.tabs.sendMessage(tab.id, {type: 'STOP'})
         })
+
+     
 })();
 
-// function downloadVideo(url){
-//     if (url && typeof url === 'string') {
-//         chrome.downloads.download({
-//           saveAs: true,
-//           url: url
-//         });
-        
-//     }
-//     else(
-//         console.log(url)
-//     );
-  
-// }
