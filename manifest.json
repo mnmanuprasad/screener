@@ -30,6 +30,7 @@
                 "default": "Alt+S",
                 "mac": "Command+S"
               },
+            "global": true,
             "description": "Stop Recording"
         }
       }

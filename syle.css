@@ -1,0 +1,25 @@
+body{
+    background-color: #f5f5f5;
+    padding: 10px;
+    width: 150px;
+    border-color: #ccd5ae;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.controls .btn{
+    background-color:  #ccd5ae;
+    color : #483e3e;
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
